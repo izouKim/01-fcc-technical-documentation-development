@@ -1,0 +1,129 @@
+/*-----------------------
+       Main Stylesheet
+------------------------*/
+/*-----------------------------------
+         Variables & Mixins
+------------------------------------*/
+/* Colors */
+/* Font sizing */
+/* Typeface */
+/* ----------------------------------------------------------
+                             Base styles
+-------------------------------------------------------------*/
+/* 
+    Apply a natural box layout model to all elements,
+    but allowing components to change.
+    http://www.paulirish.com/2012/box-sizing-border-box-ftw/
+*/
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+/*-----------------------------------
+           Layout & Grid
+  ------------------------------------*/
+body {
+  width: 1100px;
+  padding: 0;
+  margin: auto;
+}
+
+.grid-left {
+  width: 25%;
+  margin-right: 5%;
+}
+
+.grid-right {
+  width: 75%;
+  float: right;
+  margin-left: 5%;
+}
+
+/*-----------------------------------
+         Typography
+------------------------------------*/
+body {
+  font-family: "Raleway", Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  color: #333333;
+}
+
+h1,
+h2,
+h3 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  font-size: 48px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 36px;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 26px;
+  font-style: italic;
+  font-weight: 400;
+}
+
+/* ----------------------------------------------------------
+                          Theme
+  -------------------------------------------------------------*/
+a:link {
+  color: #0066cc;
+}
+
+a:visited {
+  color: #0066cc;
+}
+
+a:hover {
+  color: #66ccff;
+}
+
+a:focus {
+  outline: none;
+  background: #ddd;
+}
+
+/* ----------------------------------------------------------
+                          Global header
+  -------------------------------------------------------------*/
+.global-header {
+  padding-top: 40px;
+  position: relative;
+}
+
+.global-nav {
+  text-transform: uppercase;
+  position: absolute;
+  top: 40px;
+  right: 55px;
+}
+
+.global-nav a {
+  padding: 12px;
+}
+
+/*-----------------------------------
+                  Sidebar
+  ------------------------------------*/
+.css3-logo {
+  margin-top: 40px;
+  width: 108px;
+  height: 146px;
+}
+/*# sourceMappingURL=styles.css.map */

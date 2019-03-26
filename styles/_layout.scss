@@ -1,0 +1,35 @@
+/* ----------------------------------------------------------
+                             Base styles
+-------------------------------------------------------------*/
+/* 
+    Apply a natural box layout model to all elements,
+    but allowing components to change.
+    http://www.paulirish.com/2012/box-sizing-border-box-ftw/
+*/
+
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/*-----------------------------------
+           Layout & Grid
+  ------------------------------------*/
+body {
+  width: 1100px;
+  padding: 0;
+  margin: auto;
+}
+.grid-left {
+  width: 25%;
+  margin-right: 5%;
+}
+.grid-right {
+  width: 75%;
+  float: right;
+  margin-left: 5%;
+}
