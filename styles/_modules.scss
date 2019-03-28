@@ -40,30 +40,41 @@ a:hover {
 }
 a:focus {
   outline: none;
-  background: #ddd;
+  color: $hover-link;
+  /*background: #cccccc;*/
 }
 
 /* ----------------------------------------------------------
                           Global header
   -------------------------------------------------------------*/
 .global-header {
-  padding-top: 40px;
-  position: relative;
 }
 .global-nav {
   text-transform: uppercase;
-  position: absolute;
-  top: 40px;
-  right: 55px;
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 7px;
+  border-bottom: $light-gray 8px solid;
 }
-.global-nav a {
-  padding: 12px;
+.global-header a {
+  text-decoration: none;
+  font-weight: 600;
 }
+body.intro a.intro,
+body.cascading a.cascading,
+body.box a.box,
+body.layout a.layout,
+body.animation a.animation {
+  color: black;
+  font-weight: 700;
+}
+
 /*-----------------------------------
                   Sidebar
   ------------------------------------*/
 .css3-logo {
-  margin-top: 40px;
+  margin-top: 41px;
   width: 108px;
   height: 146px;
 }

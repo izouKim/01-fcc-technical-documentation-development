@@ -9,20 +9,23 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="/node_modules/normalize.css/normalize.css" />
-    <link rel="stylesheet" href="/scss/styles.css" />
+    <link rel="stylesheet" href="/styles/styles.css" />
     <title>Document</title>
   </head>
-  <body>
-    <div class="grid-right">
+  <body class="intro">
+    <div id="body-grid-container">
       <header class="global-header">
         <nav class="global-nav">
-          <a href="">INTRO</a>
-          <a href="">CASCADING & INHERITANCE</a>
-          <a href="">BOX MODEL</a>
-          <a href="">LAYOUT</a>
-          <a href="">ANIMATION</a>
+          <a class="intro" href="index.html">INTRO</a>
+          <a class="cascading" href="1-cascading-inheritance.html">
+            CASCADING & INHERITANCE
+          </a>
+          <a class="box" href="2-box-model.html">BOX MODEL</a>
+          <a class="layout" href="3-layout.html">LAYOUT</a>
+          <a class="animation" href="4-animation.html">ANIMATION</a>
         </nav>
       </header>
+
       <main id="main-doc">
         <section>
           <!-- PART 0 -->
@@ -167,16 +170,19 @@
           </section>
         </section>
       </main>
-    </div>
-    <div class="grid-left">
+
       <aside>
-        <img class="css3-logo" src="/assets/css3-logo.png" alt="CSS logo" />
+        <a href="/html/index.html"
+          ><img class="css3-logo" src="/assets/css3-logo.png" alt="CSS logo"
+        /></a>
         <nav id="navbar">
           <header>INTRO</header>
         </nav>
       </aside>
 
-      <footer></footer>
+      <footer>
+        <h2>footer</h2>
+      </footer>
     </div>
   </body>
 </html>
