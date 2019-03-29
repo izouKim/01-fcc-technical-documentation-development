@@ -2,19 +2,19 @@
            Layout & Grid
   ------------------------------------*/
 #body-grid-container {
-  width: 1100px;
+  max-width: 1000px;
   height: 100%;
   margin: auto;
   display: grid;
-  grid-template-columns: 25% auto;
+  grid-template-columns: 25% 5% auto;
   grid-template-rows: 10%, 80%, 10%;
 }
 .global-header {
-  grid-column: 2/3;
+  grid-column: 3/4;
   grid-row: 1/2;
 }
 main {
-  grid-column: 2/3;
+  grid-column: 3/4;
   grid-row: 2/4;
 }
 aside {

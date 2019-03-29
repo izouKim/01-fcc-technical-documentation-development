@@ -1,7 +1,7 @@
 {
-  "name": "name",
-  "description": "description",
-  "authors": "author",
+  "name": "fcc-technical-documentation-page",
+  "description": "freeCodeCamp technical documentation page project",
+  "authors": "Izou Kim",
   "version": "1.0.0",
   "main": "pathToMain",
   "dependencies": {},
