@@ -1,0 +1,64 @@
+/*-----------------------------------
+                footer
+  ------------------------------------*/
+footer {
+  border-top: $light-gray 8px solid;
+  width: 90%;
+
+  margin: auto;
+  margin-top: 20px;
+  @media (min-width: 650px) and (max-width: 900px) {
+    margin-top: 0;
+  }
+
+  p {
+    margin-top: 40px;
+    font-size: $font-size-xs;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+}
+section.social-media-logo {
+  width: 90%;
+  @media (max-width: 900px) {
+    width: 50%;
+  }
+  margin: auto;
+  margin-top: 40px;
+  display: flex;
+
+  div.logo-space {
+    width: 40%;
+  }
+
+  img {
+    display: block;
+    height: 30px;
+  }
+}
+div.subscribe-button {
+  // background-color: aqua;
+  margin-top: 40px;
+  height: 30px;
+  @media (max-width: 900px) {
+    width: 50%;
+    margin: auto;
+    margin-top: 40px;
+  }
+}
+input#subscribe {
+  border: 1px solid $light-gray;
+  border-radius: 7px;
+  height: 22px;
+  width: 60%;
+}
+.subscribe {
+  border: 1px solid #ffcc99;
+  border-radius: 7px;
+  background-color: #ffcc99;
+  color: white;
+  font-size: 14px;
+  height: 33px;
+  width: 35%;
+  padding-inline-start: 2.7px;
+}
