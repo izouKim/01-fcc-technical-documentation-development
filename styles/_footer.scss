@@ -40,6 +40,7 @@ div.subscribe-button {
   // background-color: aqua;
   margin-top: 40px;
   height: 30px;
+
   @media (max-width: 900px) {
     width: 50%;
     margin: auto;
@@ -61,4 +62,7 @@ input#subscribe {
   height: 33px;
   width: 35%;
   padding-inline-start: 2.7px;
+  a {
+    color: white;
+  }
 }

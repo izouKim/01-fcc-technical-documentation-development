@@ -490,4 +490,8 @@ input#subscribe {
   -webkit-padding-start: 2.7px;
           padding-inline-start: 2.7px;
 }
+
+.subscribe a {
+  color: white;
+}
 /*# sourceMappingURL=styles.css.map */
