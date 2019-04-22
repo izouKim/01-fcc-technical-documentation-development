@@ -1,0 +1,75 @@
+/*-----------------------------------
+                  Main
+  ------------------------------------*/
+main {
+  border: $dark-blue 8px solid;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  div {
+    width: 85%;
+    margin: 10px 6% 40px 9%;
+  }
+}
+@media (min-width: 700px) and (max-width: 950px) {
+  main > div {
+    width: 95%;
+    margin: auto;
+  }
+}
+.separator {
+  height: 30px;
+  width: 30%;
+  border-bottom: $dark-blue 2px solid;
+  margin: -1rem 6% 2rem 70%;
+}
+h1,
+h2,
+h3 {
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+h1 {
+  font-family: $raleway;
+  text-align: right;
+  margin-block-start: 2rem;
+  margin-block-end: 0.6rem;
+}
+h2 {
+  margin-block-end: 1rem;
+}
+p {
+  margin-block-start: 0px;
+  margin-block-end: 2rem;
+  line-height: 1.7rem;
+}
+p.intro-text {
+  text-align: justify;
+  font-size: $font-size-s;
+}
+article {
+  width: 90%;
+  margin-left: 3%;
+  padding-left: 2%;
+  border-left: $dark-blue 2px solid;
+}
+
+code {
+  display: block;
+  font-size: $font-size-xs;
+  color: white;
+  background-color: $dark-gray;
+  text-align: left;
+  white-space: pre;
+  line-height: 1.2rem;
+  border-radius: 5px;
+  width: 90%;
+  margin-left: 5%;
+  margin-top: -1.5rem;
+  margin-block-end: 2rem;
+  padding: 10px 20px;
+}
+li {
+  list-style: square;
+  margin: -2rem 0 3rem 20px;
+  font-size: $font-size-xs;
+}

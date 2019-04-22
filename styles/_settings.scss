@@ -6,6 +6,7 @@
 $dark-blue: #0170ba;
 $light-blue: #29a9df;
 $dark-gray: #333333;
+
 $light-gray: #cccccc;
 
 $link: $dark-blue;
@@ -13,13 +14,15 @@ $hover-link: $light-blue;
 $body-text: $dark-gray;
 
 /* Font sizing */
-$font-size-body: 16px;
-$font-size-h3: 24px;
-$font-size-h2: 32px;
-$font-size-h1: 44px;
-$font-size-m: 20px;
-$font-size-s: 14px;
-$font-size-xs: 12px;
+$font-size-xxs: 12px;
+$font-size-xs: 16px;
+$font-size-s: 18px;
+$font-size-m: 28px;
+$font-size-l: 36px;
+$font-size-xl: 42px;
+$font-size-h3: $font-size-m;
+$font-size-h2: $font-size-l;
+$font-size-h1: $font-size-xl;
 
 /* Typeface */
 $raleway: "Raleway", Arial, Helvetica, sans-serif;
@@ -27,3 +30,52 @@ $arial: Arial, Helvetica, sans-serif;
 
 $body: $raleway;
 $headings: $arial;
+$monospace: "Courier New", Courier, monospace;
+/*-----------------------------------
+         Typography
+------------------------------------*/
+h1,
+h2,
+h3 {
+  font-family: $headings;
+}
+h1 {
+  font-size: $font-size-h1;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+h2 {
+  font-size: $font-size-h2;
+  font-weight: 600;
+}
+h3 {
+  font-size: $font-size-h3;
+  font-style: italic;
+  font-weight: 400;
+}
+body {
+  font-family: $body;
+  font-size: $font-size-s;
+  color: $body-text;
+}
+code {
+  font-family: $monospace;
+}
+
+/* ----------------------------------------------------------
+                          Theme
+  -------------------------------------------------------------*/
+a:link {
+  text-decoration: none;
+  color: $link;
+}
+a:visited {
+  color: $link;
+}
+a:hover {
+  color: $hover-link;
+}
+a:focus {
+  outline: none;
+  color: $hover-link;
+}

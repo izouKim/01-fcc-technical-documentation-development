@@ -4,65 +4,97 @@
 footer {
   border-top: $light-gray 8px solid;
   width: 90%;
-
-  margin: auto;
-  margin-top: 20px;
-  @media (min-width: 650px) and (max-width: 900px) {
-    margin-top: 0;
-  }
+  margin: 10px auto;
 
   p {
-    margin-top: 40px;
-    font-size: $font-size-xs;
+    margin-top: 1rem;
+    font-size: $font-size-xxs;
     text-align: center;
-    margin-bottom: 40px;
   }
 }
-section.social-media-logo {
+section.social-media-icon {
   width: 90%;
-  @media (max-width: 900px) {
-    width: 50%;
-  }
   margin: auto;
-  margin-top: 40px;
+  margin-top: 1rem;
   display: flex;
-
-  div.logo-space {
-    width: 40%;
-  }
-
+  justify-content: space-between;
   img {
     display: block;
     height: 30px;
   }
 }
-div.subscribe-button {
-  // background-color: aqua;
-  margin-top: 40px;
-  height: 30px;
-
-  @media (max-width: 900px) {
-    width: 50%;
-    margin: auto;
-    margin-top: 40px;
-  }
+form {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
 }
-input#subscribe {
+input {
+  display: block;
   border: 1px solid $light-gray;
-  border-radius: 7px;
-  height: 22px;
-  width: 60%;
+  border-radius: 5px;
+  height: 33px;
+  width: 90%;
+  margin: auto;
 }
-.subscribe {
+button[type="submit"] {
+  display: block;
+  border-radius: 5px;
   border: 1px solid #ffcc99;
-  border-radius: 7px;
   background-color: #ffcc99;
   color: white;
-  font-size: 14px;
-  height: 33px;
-  width: 35%;
-  padding-inline-start: 2.7px;
-  a {
-    color: white;
+  font-size: $font-size-s;
+  height: 35px;
+  width: 91%;
+  margin: auto;
+  margin-top: 0.5rem;
+  cursor: pointer;
+}
+@media (min-width: 700px) and (max-width: 950px) {
+  footer {
+    p {
+      margin-top: 1rem;
+      line-height: $font-size-xxs;
+    }
+  }
+  section.social-media-icon {
+    width: 100%;
+    margin: auto;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    img {
+      display: block;
+      height: 18px;
+    }
+  }
+  input {
+    height: 25px;
+    width: 99%;
+  }
+  button[type="submit"] {
+    height: 25px;
+    width: 100%;
+  }
+}
+@media (max-width: 700px) {
+  footer {
+    width: 70%;
+  }
+  section.social-media-icon {
+    width: 70%;
+  }
+
+  input {
+    display: block;
+    border: 1px solid $light-gray;
+    border-radius: 5px;
+    height: 30px;
+    width: 70%;
+    margin: auto;
+  }
+  button[type="submit"] {
+    font-size: $font-size-s;
+    height: 33px;
+    width: 71%;
   }
 }
